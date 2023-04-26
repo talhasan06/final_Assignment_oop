@@ -36,8 +36,9 @@ public class Test {
     }
 }
 
-//
-//Output:
-//        java.lang.Exception: Exception in TestC
-//        Don't forget me
-//        Exception in TestB: a is zero.
+
+Output:
+--------
+       java.lang.Exception: Exception in TestC
+       Don't forget me
+       Exception in TestB: a is zero.
