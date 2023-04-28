@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 class Student{
     String name;
@@ -31,6 +33,14 @@ public class Main {
         } else {
             System.out.println("The list does not contain the searchStudent object.");
         }
-
+        Collections.sort(list, new Comparator<Student>() {
+            @Override
+            public int compare(Student s1, Student s2) {
+                if(s1.cgpa>s2.cgpa){
+                    return -1;
+                }
+                return 0;
+            }
+        });
     }
 }
